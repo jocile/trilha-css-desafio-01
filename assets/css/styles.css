@@ -5,10 +5,11 @@
   --color-primary: #33A8DB;
   --color-secondary: #1472B7;
   --color-text: #31A8DD;
-  --font-size-large: 2.5rem;
-  --font-size-medium: 1.25rem;
-  --font-size-small: 1rem;
-  --logo-size: 260px;
+  --font-size-base: 1rem;
+  --font-size-large: 2.5em;
+  --font-size-medium: 1.25em;
+  --font-size-small: 1em;
+  --logo-size: 16.25em; /* 260px / 16px = 16.25em */
 }
 
 body {
@@ -118,41 +119,41 @@ section {
 }
 
 #transform-world {
-  height: 560px;
+  height: 35em; /* 560px / 16px = 35em */
   background-size: cover;
   background-image: url("../images/woman-code.png");
   background-attachment: fixed;
-  border-top: 1px solid var(--color-accent);
-  border-bottom: 1px solid var(--color-accent);
-  padding: 200px;
+  border-top: 0.0625em solid var(--color-accent); /* 1px / 16px = 0.0625em */
+  border-bottom: 0.0625em solid var(--color-accent);
+  padding: 12.5em; /* 200px / 16px = 12.5em */
 }
 
 #transform-world p {
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   text-transform: lowercase;
-  max-width: 250px;
-  text-shadow: 3px 2px var(--color-accent);
+  max-width: 15.625em; /* 250px / 16px = 15.625em */
+  text-shadow: 3px 2px var(--color-accent); /*text-shadow: 0.1875em 0.125em */
 }
 
 #professional-challenges {
   text-align: center;
-  width: 800px;
+  width: 50em; /* 800px / 16px = 50em */
 }
 
 #professional-challenges img {
-  margin: 32px 0;
+  margin: 2em 0; /* 32px / 16px = 2em */
 }
 
 footer {
-  padding: 60px 0;
+  padding: 3.75em 0; /* 60px / 16px = 3.75em */
   text-align: center;
   background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
-  border-top: 1px solid var(--color-accent);
+  border-top: 0.0625em solid var(--color-accent);
 }
 
 footer .dio-logo {
-  width: 300px;
+  width: 18.75em; /* 300px / 16px = 18.75em */
 }
 
 footer a {
