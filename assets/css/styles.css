@@ -1,6 +1,7 @@
 @import url('reset.css');
 
 :root {
+  --color-accent: #33A8DB;
   --color-primary: #33A8DB;
   --color-secondary: #1472B7;
   --color-text: #31A8DD;
@@ -121,8 +122,8 @@ section {
   background-size: cover;
   background-image: url("../images/woman-code.png");
   background-attachment: fixed;
-  border-top: 1px solid #33A8DB80;
-  border-bottom: 1px solid #33A8DB80;
+  border-top: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
   padding: 200px;
 }
 
@@ -131,7 +132,7 @@ section {
   font-size: 2.5rem;
   text-transform: lowercase;
   max-width: 250px;
-  text-shadow: 3px 2px #33A8DB;
+  text-shadow: 3px 2px var(--color-accent);
 }
 
 #professional-challenges {
@@ -147,7 +148,7 @@ footer {
   padding: 60px 0;
   text-align: center;
   background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
-  border-top: 1px solid #33A8DB80;
+  border-top: 1px solid var(--color-accent);
 }
 
 footer .dio-logo {
@@ -155,7 +156,7 @@ footer .dio-logo {
 }
 
 footer a {
-  color: #33A8DB;
+  color: var(--color-accent);
   font-weight: bold;
   text-decoration: none;
 }
