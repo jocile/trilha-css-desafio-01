@@ -1,5 +1,15 @@
 @import url('reset.css');
 
+:root {
+  --color-primary: #33A8DB;
+  --color-secondary: #1472B7;
+  --color-text: #31A8DD;
+  --font-size-large: 2.5rem;
+  --font-size-medium: 1.25rem;
+  --font-size-small: 1rem;
+  --logo-size: 260px;
+}
+
 body {
   background-color: black;
 }
@@ -25,24 +35,24 @@ p {
 }
 
 .banner h1 {
-  font-size: 2.5rem;
+  font-size: var(--font-size-large);
   font-weight: 900;
   text-transform: uppercase;
   color: transparent;
-  background: -webkit-linear-gradient(#33A8DB, #1472B7);
+  background: -webkit-linear-gradient(var(--color-primary), var(--color-secondary));
   background-clip: text;
   -webkit-background-clip: text;
 }
 
 .banner p {
-  font-size: 1.25rem;
+  font-size: var(--font-size-medium);
   margin: 16px 0 24px;
 }
 
 .banner .logo {
   background-color: rgba(0, 0, 0, .2);
-  height: 260px;
-  width: 260px;
+  height: var(--logo-size);
+  width: var(--logo-size);
   margin: auto;
   border-radius: 50%;
   padding: 16px;
@@ -57,14 +67,14 @@ p {
 }
 
 .banner .banner-content button {
-  color: #31A8DD;
-  font-size: 1rem;
+  color: var(--color-text);
+  font-size: var(--font-size-small);
   font-weight: bold;
   padding: 16px 32px;
   text-transform: uppercase;
   letter-spacing: 4px;
   background-color: transparent;
-  border-image: linear-gradient(#3BA1CD, #1572B7);
+  border-image: linear-gradient(var(--color-primary), var(--color-secondary));
   border-image-slice: 10;
   border-radius: 30px;
 }
